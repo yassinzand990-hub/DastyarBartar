@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dastyar Bartar</title>
-  <!-- فاویکون (لوگو کوچیک کنار اسم سایت) -->
   <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://cdn.fontcdn.ir/Font/Persian/Vazir/Vazir.css" rel="stylesheet">
   <style>
     body {
       margin: 0;
@@ -13,6 +13,7 @@
       background: #f9f9f9;
       color: #333;
       line-height: 1.6;
+      direction: rtl;
     }
     header {
       background: #0f3057;
@@ -24,7 +25,7 @@
     }
     header img {
       height: 50px;
-      margin-right: 15px;
+      margin-left: 15px;
     }
     header h1 {
       font-size: 1.8rem;
@@ -58,6 +59,20 @@
     .hero p {
       font-size: 1.2rem;
       color: #444;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background: #0f3057;
+      color: #fff;
+      padding: 12px 25px;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .btn:hover {
+      background: #145084;
     }
     footer {
       background: #0f3057;
@@ -89,18 +104,20 @@
     </nav>
   </header>
 
-  <!-- بخش اول (Hero Section) -->
+  <!-- بخش اول -->
   <section class="hero">
     <img src="logo.png" alt="Logo">
-    <h2>به سایت دستیار برتر خوش آمدید</h2>
-    <p> دستیار شما برای مدیریت بهتر و حرفه‌ای‌تر پروژه های دانشگاهی  </p>
+    <h2>به دستیار برتر خوش آمدید</h2>
+    <p>دستیار شما برای مدیریت بهتر و حرفه‌ای‌تر امور روزمره</p>
+    <button class="btn" onclick="window.location.href='order.html'">+ ثبت سفارش</button>
   </section>
-  
-  <!-- فوتر (ارتباط با ما) -->
+
+  <!-- فوتر -->
   <footer id="contact">
     <h3>ارتباط با ما</h3>
-    <p>📞 شماره تماس: <a href="tel:09106664207">09106664207</a></p>
+    <p>📞 شماره تماس: <a href="tel:09058723487">09058723487</a></p>
     <p>📷 اینستاگرام: <a href="https://instagram.com/dastyar_bartar" target="_blank">@dastyar_bartar</a></p>
+    <p>© 2024 DastyarBartar</p>
   </footer>
 
 </body>
