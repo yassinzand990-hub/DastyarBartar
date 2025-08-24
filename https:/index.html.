@@ -1,0 +1,118 @@
+<!DOCTYPE html><html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>دستیار برتر</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a2e0e6ad6a.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gradient-to-b from-orange-50 to-white text-slate-800">  <!-- هدر -->  <header class="sticky top-0 bg-white bg-opacity-80 backdrop-blur border-b">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div class="flex items-center gap-2">
+        <div class="p-2 bg-orange-500 text-white rounded-xl"><i class="fas fa-rocket"></i></div>
+        <h1 class="text-xl font-extrabold">دستیار برتر</h1>
+      </div>
+      <nav class="hidden md:flex gap-6 text-sm">
+        <a href="#services" class="hover:text-orange-600">خدمات</a>
+        <a href="#plans" class="hover:text-orange-600">تعرفه‌ها</a>
+        <a href="#contact" class="hover:text-orange-600">ثبت پروژه</a>
+      </nav>
+      <a href="tel:09058733487" class="hidden md:inline-flex bg-orange-500 text-white px-4 py-2 rounded-xl shadow">تماس فوری</a>
+    </div>
+  </header>  <!-- هیرو -->  <section class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-2 gap-10 items-center">
+    <div>
+      <h2 class="text-3xl md:text-5xl font-black leading-tight">
+        انجام کلیه پروژه‌های <span class="text-orange-600">دانشجویی</span>
+      </h2>
+      <p class="mt-4 text-slate-600 leading-8">
+        از تحقیق و مقاله تا پاورپوینت، تایپ، طراحی گرافیک، اتوکد و رندر — همه در یک تیم چابک با تمرکز بر کیفیت و تحویل به‌موقع.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a href="#contact" class="bg-orange-500 text-white px-5 py-3 rounded-xl shadow">ثبت سفارش</a>
+        <a href="tel:09058733487" class="border border-orange-500 text-orange-600 px-5 py-3 rounded-xl">تماس تلفنی</a>
+        <a href="https://wa.me/989058733487?text=سلام، برای ثبت پروژه تماس می‌گیرم." target="_blank" class="border border-green-500 text-green-600 px-5 py-3 rounded-xl">واتساپ</a>
+      </div>
+    </div>
+    <div class="bg-white rounded-3xl shadow-xl p-6 border text-center">
+      <i class="fas fa-rocket text-4xl text-orange-500"></i>
+      <p class="font-bold mt-4">پایان دغدغه – آغاز بهترین نمره‌ها</p>
+      <p class="text-slate-500 text-sm mt-2">همین حالا پروژه‌ات را ثبت کن</p>
+    </div>
+  </section>  <!-- خدمات -->  <section id="services" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl md:text-3xl font-extrabold">خدمات ما</h3>
+    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold text-lg">تحقیق و مقاله</h4>
+        <p class="text-slate-600 mt-2">انجام تحقیق، مقاله و گزارش‌های دانشگاهی با رعایت اصول پژوهشی</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold text-lg">ورد و پاورپوینت</h4>
+        <p class="text-slate-600 mt-2">تهیه اسلایدهای حرفه‌ای، صفحه‌آرایی و فرمت‌بندی استاندارد</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold text-lg">طراحی و گرافیک</h4>
+        <p class="text-slate-600 mt-2">طراحی پوستر، اینفوگرافیک، جلد و قالب‌های ارائه</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold text-lg">تایپ و ویراستاری</h4>
+        <p class="text-slate-600 mt-2">تایپ سریع فارسی/انگلیسی، رفع غلط‌های املایی و نگارشی</p>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold text-lg">اتوکد و شیت‌بندی</h4>
+        <p class="text-slate-600 mt-2">ترسیم نقشه، شیت‌بندی پروژه‌ها و آماده‌سازی پرینت</p></div>
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold text-lg">پرسپکتیو و رندر</h4>
+        <p class="text-slate-600 mt-2">مدلسازی، رندر و ارائه‌ی شفاف برای پایان‌نامه و پروژه</p>
+      </div>
+    </div>
+  </section>  <!-- تعرفه‌ها -->  <section id="plans" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl md:text-3xl font-extrabold">تعرفه‌های پیشنهادی</h3>
+    <div class="mt-8 grid md:grid-cols-3 gap-6">
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold">پایه</h4>
+        <p class="text-slate-600 mt-2">شروع از ۹۹ هزارتومان</p>
+        <ul class="list-disc pr-5 mt-2 text-slate-500 text-sm">
+          <li>تحویل به‌موقع</li>
+          <li>بازبینی یک‌مرحله‌ای</li>
+          <li>فرمت‌بندی استاندارد</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow border border-orange-500">
+        <h4 class="font-bold">حرفه‌ای</h4>
+        <p class="text-slate-600 mt-2">شروع از ۲۴۹ هزارتومان</p>
+        <ul class="list-disc pr-5 mt-2 text-slate-500 text-sm">
+          <li>مشاوره قدم‌به‌قدم</li>
+          <li>طراحی بصری قوی</li>
+          <li>دو مرحله ویرایش رایگان</li>
+        </ul>
+      </div>
+      <div class="p-6 bg-white rounded-2xl shadow border">
+        <h4 class="font-bold">سفارشی</h4>
+        <p class="text-slate-600 mt-2">متناسب با نیاز شما</p>
+        <ul class="list-disc pr-5 mt-2 text-slate-500 text-sm">
+          <li>برآورد زمان و هزینه شفاف</li>
+          <li>پروژه‌های چندمرحله‌ای</li>
+          <li>پشتیبانی تا تحویل نهایی</li>
+        </ul>
+      </div>
+    </div>
+  </section>  <!-- تماس -->  <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
+    <h3 class="text-2xl font-extrabold">ثبت پروژه</h3>
+    <form action="https://wa.me/989058733487" method="get" class="mt-6 space-y-4 bg-white p-6 rounded-2xl shadow border">
+      <input type="text" name="name" placeholder="نام و نام خانوادگی" class="w-full border px-3 py-2 rounded-xl">
+      <input type="text" name="phone" placeholder="شماره تماس" class="w-full border px-3 py-2 rounded-xl">
+      <textarea name="text" rows="5" placeholder="توضیحات پروژه" class="w-full border px-3 py-2 rounded-xl"></textarea>
+      <button type="submit" class="bg-green-500 text-white px-5 py-2 rounded-xl">ارسال در واتساپ</button>
+    </form>
+    <p class="mt-4 text-sm text-slate-500">راه‌های ارتباطی: <a href="tel:09058733487" class="text-orange-600 font-bold">09058733487</a></p>
+  </section>  <footer class="border-t mt-10">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-sm flex justify-between">
+      <p>© 2025 دستیار برتر — همه حقوق محفوظ است.</p>
+      <div class="flex gap-4">
+        <a href="#services">خدمات</a>
+        <a href="#plans">تعرفه‌ها</a>
+        <a href="#contact">ثبت پروژه</a>
+      </div>
+    </div>
+  </footer></body>
+</html>
