@@ -3,65 +3,72 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>فرم ثبت سفارش - DastyarBartar</title>
+  <title>فرم ثبت سفارش | DastyarBartaar</title>
   <style>
     body {
-      font-family: Vazir, sans-serif;
-      background: #f5f7fa;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      font-family: "Tahoma", sans-serif;
+      background: #f2f6fc;
       margin: 0;
-    }
-    .form-container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      width: 350px;
+      padding: 0;
+      direction: rtl;
       text-align: center;
     }
-    h2 {
-      margin-bottom: 20px;
-      color: #2c3e50;
+    header {
+      background: #1e3a8a;
+      padding: 15px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
     }
-    input, select {
+    .form-container {
+      margin: 50px auto;
+      max-width: 400px;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .form-container h2 {
+      margin-bottom: 20px;
+      color: #1e3a8a;
+    }
+    .form-container input, .form-container select {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin: 10px 0;
       border: 1px solid #ccc;
       border-radius: 8px;
       font-size: 14px;
     }
-    button {
-      width: 100%;
-      padding: 12px;
-      background: #2c3e50;
+    .form-container button {
+      background: #1e3a8a;
       color: white;
       border: none;
-      border-radius: 8px;
+      padding: 12px;
+      width: 100%;
       font-size: 16px;
+      border-radius: 8px;
       cursor: pointer;
     }
-    button:hover {
-      background: #34495e;
-    }
-    .logo {
-      width: 70px;
-      margin-bottom: 15px;
+    .form-container button:hover {
+      background: #172554;
     }
   </style>
 </head>
 <body>
+
+  <header>
+    <img src="logo.png" alt="لوگو" style="height:30px; vertical-align:middle;">
+    DastyarBartaar
+  </header>
+
   <div class="form-container">
-    <img src="logo.png" alt="لوگو" class="logo">
     <h2>فرم ثبت سفارش</h2>
     <form id="orderForm">
       <input type="text" id="fullname" placeholder="نام و نام خانوادگی" required>
       <input type="text" id="phone" placeholder="شماره موبایل" required>
       <select id="projectType" required>
-        <option value="">نوع پروژه</option>
+        <option value="">انتخاب نوع پروژه</option>
         <option value="تحقیق">تحقیق</option>
         <option value="مقاله">مقاله</option>
         <option value="پاورپوینت">پاورپوینت</option>
@@ -80,50 +87,14 @@
     </form>
   </div>
 
+  <!-- Firebase -->
   <script type="module">
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js";
     import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
     import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-auth.js";
 
-    // تنظیمات Firebase
     const firebaseConfig = {
       apiKey: "AIzaSyAyU-o_TWj04kDfiJhgXXOvK6gGp1YGD5U",
       authDomain: "dastyar-bartar.firebaseapp.com",
       projectId: "dastyar-bartar",
-      storageBucket: "dastyar-bartar.appspot.com",
-      messagingSenderId: "639351841461",
-      appId: "1:639351841461:web:0f2ee26e34e23265bd54fc",
-    };
-
-    // Initialize
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestore(app);
-    const auth = getAuth(app);
-
-    // هندل ثبت سفارش
-    document.getElementById("orderForm").addEventListener("submit", async (e) => {
-      e.preventDefault();
-
-      const fullname = document.getElementById("fullname").value;
-      const phone = document.getElementById("phone").value;
-      const projectType = document.getElementById("projectType").value;
-
-      try {
-        await addDoc(collection(db, "orders"), {
-          fullname,
-          phone,
-          projectType,
-          createdAt: serverTimestamp(),
-          userId: auth.currentUser ? auth.currentUser.uid : null
-        });
-
-        // بعد از ثبت موفق
-        window.location.href = "success.html";
-
-      } catch (error) {
-        alert("❌ خطا در ثبت سفارش: " + error.message);
-      }
-    });
-  </script>
-</body>
-</html>
+      storageBucket: "dastyar-b
